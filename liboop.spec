@@ -7,6 +7,7 @@ License:	LGPL
 Group:		Libraries
 Source0:	http://www.liboop.org/%{name}-%{version}.tar.gz
 Patch0:		%{name}-libwww-fix.patch
+Patch1:		%{name}-nolibs.patch
 URL:		http://www.liboop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -158,7 +159,8 @@ Statyczne biblioteki liboop.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing

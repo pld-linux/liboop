@@ -1,0 +1,14 @@
+--- liboop-0.8/configure.in.orig	Thu Sep 20 14:54:39 2001
++++ liboop-0.8/configure.in	Sun Mar  2 18:31:01 2003
+@@ -64,10 +64,8 @@
+   WWW_INCLUDES="-I/usr/include/w3c-libwww"
+ ],,-lwwwutils)
+ 
+-AC_CHECK_LIB(resolv,res_query)
+ if test -z "$no_wacky_libs" ; then
+-  AC_CHECK_LIB(nsl,main)
+-  AC_CHECK_LIB(socket,socket)
++  AC_SEARCH_LIBS(socket,socket)
+ fi
+ 
+ test yes = "$GCC" && 
