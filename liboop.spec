@@ -11,6 +11,7 @@ URL:		http://www.liboop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	glib-devel
+BuildRequires:	libtool
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
 BuildRequires:	tcl-devel
@@ -162,7 +163,7 @@ Statyczne biblioteki liboop.
 %build
 rm -f missing
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
