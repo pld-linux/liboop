@@ -6,6 +6,7 @@ Release:	5
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.liboop.org/%{name}-%{version}.tar.gz
+# Source0-md5:	903f8d2f9b94e7b0ac73be61d6a5442f
 Patch0:		%{name}-libwww-fix.patch
 Patch1:		%{name}-nolibs.patch
 URL:		http://www.liboop.org/
