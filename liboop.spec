@@ -33,7 +33,7 @@ be used as the basis for almost any application.
 liboop jest bibliotek± do zarz±dzania niskopoziomowymi pêtlami w
 systemach opartych na POSIX. Zawiera ona wsparcie umo¿liwiaj±ce rozwój
 modularnych, zwielokrotnionych aplikacji, które mog± reagowaæ na
-zdarzênia pochodz±ce z kilku ¼róde³. Zastêpuje ona "pêtlê select()" i
+zdarzenia pochodz±ce z kilku ¼róde³. Zastêpuje ona "pêtlê select()" i
 umo¿liwia rejestracjê funkcji obs³ugi zdarzeñ dla plikowego i
 sieciowego we/wy, zegarów i sygna³ów. Ze wzglêdu na to, ¿e procesy
 korzystaj± z tych mechanizmów przy praktycznie ka¿dej komunikacji z
