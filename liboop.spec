@@ -196,7 +196,7 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/liboop.so
-%attr(755,root,root) %{_libdir}/liboop.la
+%{_libdir}/liboop.la
 %{_includedir}/oop.h
 %{_includedir}/oop-read.h
 
@@ -217,11 +217,11 @@ rm -rf $RPM_BUILD_ROOT
 %files bindings-devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/liboop-adns.so
-%attr(755,root,root) %{_libdir}/liboop-adns.la
+%{_libdir}/liboop-adns.la
 %attr(755,root,root) %{_libdir}/liboop-glib.so
-%attr(755,root,root) %{_libdir}/liboop-glib.la
+%{_libdir}/liboop-glib.la
 %attr(755,root,root) %{_libdir}/liboop-rl.so
-%attr(755,root,root) %{_libdir}/liboop-rl.la
+%{_libdir}/liboop-rl.la
 %{_includedir}/oop-adns.h
 %{_includedir}/oop-glib.h
 %{_includedir}/oop-rl.h
@@ -229,13 +229,13 @@ rm -rf $RPM_BUILD_ROOT
 %files binding-tcl-devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/liboop-tcl.so
-%attr(755,root,root) %{_libdir}/liboop-tcl.la
+%{_libdir}/liboop-tcl.la
 %{_includedir}/oop-tcl.h
 
 %files binding-www-devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/liboop-www.so
-%attr(755,root,root) %{_libdir}/liboop-www.la
+%{_libdir}/liboop-www.la
 %{_includedir}/oop-www.h
 
 %files static
