@@ -1,0 +1,11 @@
+--- liboop-0.8/test-oop.c.orig	Tue Sep 18 23:48:46 2001
++++ liboop-0.8/test-oop.c	Fri May 24 19:56:11 2002
+@@ -42,6 +42,8 @@
+ 
+ #include "WWWLib.h"
+ #include "WWWInit.h"
++/* for readline it must be undefined */
++#undef HAVE_CONFIG_H
+ #endif
+ 
+ #ifdef HAVE_READLINE
