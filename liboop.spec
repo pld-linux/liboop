@@ -2,7 +2,7 @@ Summary:	Libraries for low-level event loop management
 Summary(pl):	Biblioteki do zarz±dzania niskopoziomowymi pêtlami
 Name:		liboop
 Version:	0.8
-Release:	4
+Release:	5
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.liboop.org/%{name}-%{version}.tar.gz
@@ -34,9 +34,8 @@ zdarzênia pochodz±ce z kilku ¼róde³. Zastêpuje ona "pêtlê select()" i
 umo¿liwia rejestracjê funkcji obs³ugi zdarzeñ dla plikowego i
 sieciowego we/wy, zegarów i sygna³ów. Ze wzglêdu na to, ¿e procesy
 korzystaj± z tych mechanizmów przy praktycznie ka¿dej komunikacji z
-otoczeniem, Since processes use these mechanisms for almost all
-external communication, mo¿na u¿ywaæ liboop jako podstawy dla prawie
-wszystkich aplikacji.
+otoczeniem, mo¿na u¿ywaæ liboop jako podstawy dla prawie wszystkich 
+aplikacji.
 
 %package bindings
 Summary:	liboop bindings for specific libraries
