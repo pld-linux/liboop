@@ -74,8 +74,8 @@ Statyczne biblioteki liboop.
 rm -f missing
 libtoolize --copy --force
 aclocal
-autoconf
-automake -a -c -f --foreign
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
