@@ -2,7 +2,7 @@ Summary:	Libraries for low-level event loop management
 Summary(pl):	Biblioteki do zarz±dzania niskopoziomowymi pêtlami
 Name:		liboop
 Version:	0.8
-Release:	5
+Release:	6
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.liboop.org/%{name}-%{version}.tar.gz
@@ -16,7 +16,7 @@ BuildRequires:	glib-devel
 BuildRequires:	libtool
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
-BuildRequires:	tcl-devel
+BuildRequires:	tcl-devel >= 8.3.4-10
 BuildRequires:	w3c-libwww-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -174,8 +174,8 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
