@@ -37,7 +37,7 @@ zdarzênia pochodz±ce z kilku ¼róde³. Zastêpuje ona "pêtlê select()" i
 umo¿liwia rejestracjê funkcji obs³ugi zdarzeñ dla plikowego i
 sieciowego we/wy, zegarów i sygna³ów. Ze wzglêdu na to, ¿e procesy
 korzystaj± z tych mechanizmów przy praktycznie ka¿dej komunikacji z
-otoczeniem, mo¿na u¿ywaæ liboop jako podstawy dla prawie wszystkich 
+otoczeniem, mo¿na u¿ywaæ liboop jako podstawy dla prawie wszystkich
 aplikacji.
 
 %package bindings
