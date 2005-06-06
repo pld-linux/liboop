@@ -12,6 +12,7 @@ Patch1:		%{name}-nolibs.patch
 URL:		http://www.liboop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	expat-devel
 BuildRequires:	glib-devel
 BuildRequires:	libtool
 BuildRequires:	ncurses-devel
