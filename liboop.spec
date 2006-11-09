@@ -45,7 +45,7 @@ aplikacji.
 Summary:	liboop bindings for specific libraries
 Summary(pl):	Biblioteki wi±¿±ce liboop z innymi bibliotekami
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description bindings
 liboop bindings for specific libraries (dns, glib, readline).
@@ -57,7 +57,7 @@ Biblioteki wi±¿±ce liboop z innymi bibliotekami (dns, glib, readline).
 Summary:	liboop binding for tcl library
 Summary(pl):	Biblioteka wi±¿±ca liboop z bibliotek± tcl
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description binding-tcl
 liboop binding for tcl library.
@@ -69,7 +69,7 @@ Biblioteka wi±¿±ca liboop z bibliotek± tcl.
 Summary:	liboop binding for w3c-libwww library
 Summary(pl):	Biblioteka wi±¿±ca liboop z bibliotek± w3c-libwww
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description binding-www
 liboop binding for w3c-libwww library.
@@ -81,7 +81,7 @@ Biblioteka wi±¿±ca liboop z bibliotek± w3c-libwww.
 Summary:	Header files for liboop
 Summary(pl):	Pliki nag³ówkowe liboop
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 liboop is a low-level event loop management library.
@@ -99,8 +99,8 @@ programów u¿ywaj±cych liboop.
 Summary:	Header files for liboop binding libraries
 Summary(pl):	Pliki nag³ówkowe bibliotek wi±¿±cych liboop
 Group:		Development/Libraries
-Requires:	%{name}-bindings = %{version}
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-bindings = %{version}-%{release}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description bindings-devel
 liboop is a low-level event loop management library.
@@ -118,8 +118,8 @@ programów u¿ywaj±cych bibliotek wi±¿±cych liboop.
 Summary:	Header file for liboop tcl binding library
 Summary(pl):	Plik nag³ówkowy biblioteki wi±¿±cej liboop z tcl
 Group:		Development/Libraries
-Requires:	%{name}-binding-tcl = %{version}
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-binding-tcl = %{version}-%{release}
+Requires:	%{name}-devel = %{version}-%{release}
 Requires:	tcl-devel
 
 %description binding-tcl-devel
@@ -127,15 +127,15 @@ This package contains the header file needed to write or compile
 programs that use liboop tcl binding library.
 
 %description binding-tcl-devel -l pl
-Ten pakiet zawiera plik nag³ówkowy potrzebny do kompilowania
-programów u¿ywaj±cych biblioteki wi±¿±cej liboop z tcl.
+Ten pakiet zawiera plik nag³ówkowy potrzebny do kompilowania programów
+u¿ywaj±cych biblioteki wi±¿±cej liboop z tcl.
 
 %package binding-www-devel
 Summary:	Header file for liboop w3c-libwww binding libraries
 Summary(pl):	Plik nag³ówkowy biblioteki wi±¿±cej liboop z w3c-libwww
 Group:		Development/Libraries
-Requires:	%{name}-bindings = %{version}
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-bindings = %{version}-%{release}
+Requires:	%{name}-devel = %{version}-%{release}
 Requires:	w3c-libwww-devel
 
 %description binding-www-devel
@@ -143,15 +143,15 @@ This package contains the header file needed to write or compile
 programs that use liboop w3c-libwww binding library.
 
 %description binding-www-devel -l pl
-Ten pakiet zawiera plik nag³ówkowy potrzebny do kompilowania
-programów u¿ywaj±cych biblioteki wi±¿±cej liboop z w3c-libwww.
+Ten pakiet zawiera plik nag³ówkowy potrzebny do kompilowania programów
+u¿ywaj±cych biblioteki wi±¿±cej liboop z w3c-libwww.
 
 %package static
 Summary:	Static liboop libraries
 Summary(pl):	Statyczne biblioteki liboop
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
-Requires:	%{name}-bindings-devel = %{version}
+Requires:	%{name}-bindings-devel = %{version}-%{release}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static liboop libraries.
