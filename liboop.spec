@@ -1,5 +1,5 @@
 Summary:	Libraries for low-level event loop management
-Summary(pl.UTF-8):   Biblioteki do zarządzania niskopoziomowymi pętlami
+Summary(pl.UTF-8):	Biblioteki do zarządzania niskopoziomowymi pętlami
 Name:		liboop
 Version:	0.8
 Release:	8
@@ -43,7 +43,7 @@ aplikacji.
 
 %package bindings
 Summary:	liboop bindings for specific libraries
-Summary(pl.UTF-8):   Biblioteki wiążące liboop z innymi bibliotekami
+Summary(pl.UTF-8):	Biblioteki wiążące liboop z innymi bibliotekami
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -55,7 +55,7 @@ Biblioteki wiążące liboop z innymi bibliotekami (dns, glib, readline).
 
 %package binding-tcl
 Summary:	liboop binding for tcl library
-Summary(pl.UTF-8):   Biblioteka wiążąca liboop z biblioteką tcl
+Summary(pl.UTF-8):	Biblioteka wiążąca liboop z biblioteką tcl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -67,7 +67,7 @@ Biblioteka wiążąca liboop z biblioteką tcl.
 
 %package binding-www
 Summary:	liboop binding for w3c-libwww library
-Summary(pl.UTF-8):   Biblioteka wiążąca liboop z biblioteką w3c-libwww
+Summary(pl.UTF-8):	Biblioteka wiążąca liboop z biblioteką w3c-libwww
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -79,7 +79,7 @@ Biblioteka wiążąca liboop z biblioteką w3c-libwww.
 
 %package devel
 Summary:	Header files for liboop
-Summary(pl.UTF-8):   Pliki nagłówkowe liboop
+Summary(pl.UTF-8):	Pliki nagłówkowe liboop
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -97,7 +97,7 @@ programów używających liboop.
 
 %package bindings-devel
 Summary:	Header files for liboop binding libraries
-Summary(pl.UTF-8):   Pliki nagłówkowe bibliotek wiążących liboop
+Summary(pl.UTF-8):	Pliki nagłówkowe bibliotek wiążących liboop
 Group:		Development/Libraries
 Requires:	%{name}-bindings = %{version}-%{release}
 Requires:	%{name}-devel = %{version}-%{release}
@@ -116,7 +116,7 @@ programów używających bibliotek wiążących liboop.
 
 %package binding-tcl-devel
 Summary:	Header file for liboop tcl binding library
-Summary(pl.UTF-8):   Plik nagłówkowy biblioteki wiążącej liboop z tcl
+Summary(pl.UTF-8):	Plik nagłówkowy biblioteki wiążącej liboop z tcl
 Group:		Development/Libraries
 Requires:	%{name}-binding-tcl = %{version}-%{release}
 Requires:	%{name}-devel = %{version}-%{release}
@@ -132,7 +132,7 @@ używających biblioteki wiążącej liboop z tcl.
 
 %package binding-www-devel
 Summary:	Header file for liboop w3c-libwww binding libraries
-Summary(pl.UTF-8):   Plik nagłówkowy biblioteki wiążącej liboop z w3c-libwww
+Summary(pl.UTF-8):	Plik nagłówkowy biblioteki wiążącej liboop z w3c-libwww
 Group:		Development/Libraries
 Requires:	%{name}-bindings = %{version}-%{release}
 Requires:	%{name}-devel = %{version}-%{release}
@@ -148,7 +148,7 @@ używających biblioteki wiążącej liboop z w3c-libwww.
 
 %package static
 Summary:	Static liboop libraries
-Summary(pl.UTF-8):   Statyczne biblioteki liboop
+Summary(pl.UTF-8):	Statyczne biblioteki liboop
 Group:		Development/Libraries
 Requires:	%{name}-bindings-devel = %{version}-%{release}
 Requires:	%{name}-devel = %{version}-%{release}
