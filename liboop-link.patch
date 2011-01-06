@@ -1,0 +1,31 @@
+--- liboop-0.8/Makefile.am~	2001-09-18 22:35:45.000000000 +0200
++++ liboop-0.8/Makefile.am	2011-01-06 21:44:32.539761952 +0100
+@@ -15,23 +15,23 @@
+ liboop_la_SOURCES = sys.c select.c signal.c alloc.c read.c read-fd.c read-mem.c
+ 
+ liboop_adns_la_LDFLAGS = -version-info 2:0:0
+-liboop_adns_la_LIBADD = $(ADNS_LIBS)
++liboop_adns_la_LIBADD = $(ADNS_LIBS) liboop.la
+ liboop_adns_la_SOURCES = adns.c
+ 
+ liboop_glib_la_LDFLAGS = -version-info 1:0:0
+-liboop_glib_la_LIBADD = $(GLIB_LIBS)
++liboop_glib_la_LIBADD = $(GLIB_LIBS) liboop.la
+ liboop_glib_la_SOURCES = glib.c
+ 
+ liboop_tcl_la_LDFLAGS = -version-info 0:0:0
+-liboop_tcl_la_LIBADD = $(TCL_LIBS)
++liboop_tcl_la_LIBADD = $(TCL_LIBS) liboop.la
+ liboop_tcl_la_SOURCES = tcl.c
+ 
+ liboop_www_la_LDFLAGS = -version-info 0:0:0
+-liboop_www_la_LIBADD = $(WWW_LIBS)
++liboop_www_la_LIBADD = $(WWW_LIBS) liboop.la
+ liboop_www_la_SOURCES = www.c
+ 
+ liboop_rl_la_LDFLAGS = -version-info 0:0:0
+-liboop_rl_la_LIBADD = $(READLINE_LIBS)
++liboop_rl_la_LIBADD = $(READLINE_LIBS) liboop.la
+ liboop_rl_la_SOURCES = readline.c
+ 
+ include_HEADERS = oop.h oop-adns.h oop-glib.h oop-tcl.h oop-www.h oop-rl.h oop-read.h
