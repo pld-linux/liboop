@@ -9,6 +9,7 @@ Source0:	http://www.liboop.org/%{name}-%{version}.tar.gz
 # Source0-md5:	903f8d2f9b94e7b0ac73be61d6a5442f
 Patch0:		%{name}-libwww-fix.patch
 Patch1:		%{name}-nolibs.patch
+Patch2:		%{name}-link.patch
 URL:		http://www.liboop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -163,6 +164,7 @@ Statyczne biblioteki liboop.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 rm -f missing
@@ -170,7 +172,8 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	LDFLAGS="%{rpmldflags} -L.libs"
 %{__make}
 
 %install
