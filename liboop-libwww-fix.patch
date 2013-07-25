@@ -9,14 +9,3 @@
  #endif
  
  #ifdef HAVE_READLINE
---- liboop-0.8/configure.in.orig	Sun Mar  2 18:32:31 2003
-+++ liboop-0.8/configure.in	Sun Mar  2 18:34:56 2003
-@@ -60,7 +60,7 @@
-   WWW_LIBS=" \
-   -lwwwapp -lwwwcache -lwwwcore -lwwwdir -lwwwfile -lwwwftp -lwwwgopher \
-   -lwwwhtml -lwwwhttp -lwwwinit -lwwwmime -lwwwmux -lwwwnews -lwwwstream \
--  -lwwwtelnet -lwwwtrans -lwwwutils -lwwwxml -lwwwzip -lxmlparse -lxmltok -lmd5"
-+  -lwwwtelnet -lwwwtrans -lwwwutils -lwwwxml -lwwwzip -lmd5"
-   WWW_INCLUDES="-I/usr/include/w3c-libwww"
- ],,-lwwwutils)
- 

@@ -1,0 +1,11 @@
+--- liboop-1.0/configure.ac.orig	2003-10-26 17:39:21.000000000 +0100
++++ liboop-1.0/configure.ac	2013-07-25 17:54:17.336205842 +0200
+@@ -71,7 +71,7 @@
+ fi
+ 
+ if test xno != x$with_tcl; then
+-  for version in 8.4 8.3 8.2 8.1 8.0 ; do
++  for version in 8.5 8.4 8.3 8.2 8.1 8.0 ; do
+     CPPFLAGS="$save_cppflags -I/usr/include/tcl$version"
+     AC_CHECK_LIB(tcl$version,Tcl_Main,[
+     AC_CHECK_HEADER(tcl.h,[
