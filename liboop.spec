@@ -362,8 +362,8 @@ Statyczna biblioteka wiążąca liboop z w3c-libwww.
 %configure \
 	PROG_LDCONFIG=/bin/true \
 	%{?with_libwww:--with-libwww}
-#	LDFLAGS="%{rpmldflags} -L.libs"
-%{__make}
+
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
