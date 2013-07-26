@@ -124,6 +124,18 @@ Static liboop adns binding library.
 %description binding-adns-static -l pl.UTF-8
 Statyczna biblioteka wiążąca liboop z adns.
 
+%package binding-glib-common-devel
+Summary:	Header file for liboop GLib bindings
+Summary(pl.UTF-8):	Plik nagłówkowy wiązań liboop z bibliotekami GLib
+Group:		Development/Librares
+Requires:	%{name}-devel = %{version}-%{release}
+
+%description binding-glib-common-devel
+Header file for liboop GLib bindings.
+
+%description binding-glib-common-devel -l pl.UTF-8
+Plik nagłówkowy wiązań liboop z bibliotekami GLib.
+
 %package binding-glib
 Summary:	liboop binding for GLib 1.x library
 Summary(pl.UTF-8):	Biblioteka wiążąca liboop z biblioteką GLib 1.x
@@ -137,23 +149,23 @@ liboop binding for GLib 1.x library.
 Biblioteka wiążąca liboop z biblioteką GLib 1.x.
 
 %package binding-glib-devel
-Summary:	Header file for liboop GLib 1.x binding library
-Summary(pl.UTF-8):	Plik nagłówkowy biblioteki wiążącej liboop z biblioteką GLib 1.x
+Summary:	Development files for liboop GLib 1.x binding library
+Summary(pl.UTF-8):	Pliki programistyczne biblioteki wiążącej liboop z biblioteką GLib 1.x
 Group:		Development/Libraries
 Requires:	%{name}-binding-glib = %{version}-%{release}
-Requires:	%{name}-devel = %{version}-%{release}
+Requires:	%{name}-binding-glib-common-devel = %{version}-%{release}
 Requires:	glib-devel
 
 %description binding-glib-devel
 liboop is a low-level event loop management library.
 
-This package contains the header file needed to write or compile
+This package contains development files needed to write or compile
 programs that use liboop GLib 1.x binding library.
 
 %description binding-glib-devel -l pl.UTF-8
 liboop jest biblioteką do zarządzania niskopoziomowymi pętlami.
 
-Ten pakiet zawiera plik nagłówkowy potrzebny do kompilowania
+Ten pakiet zawiera pliki programistyczne potrzebne do kompilowania
 programów używających biblioteki wiążącej liboop z GLib 1.x.
 
 %package binding-glib-static
@@ -181,23 +193,23 @@ liboop binding for GLib 2.x library.
 Biblioteka wiążąca liboop z biblioteką GLib 2.x.
 
 %package binding-glib2-devel
-Summary:	Header file for liboop GLib 2.x binding library
-Summary(pl.UTF-8):	Plik nagłówkowy biblioteki wiążącej liboop z biblioteką GLib 2.x
+Summary:	Development files for liboop GLib 2.x binding library
+Summary(pl.UTF-8):	Pliki programistyczne biblioteki wiążącej liboop z biblioteką GLib 2.x
 Group:		Development/Libraries
 Requires:	%{name}-binding-glib2 = %{version}-%{release}
-Requires:	%{name}-devel = %{version}-%{release}
+Requires:	%{name}-binding-glib-common-devel = %{version}-%{release}
 Requires:	glib2-devel
 
 %description binding-glib2-devel
 liboop is a low-level event loop management library.
 
-This package contains the header file needed to write or compile
+This package contains development files needed to write or compile
 programs that use liboop GLib 2.x binding library.
 
 %description binding-glib2-devel -l pl.UTF-8
 liboop jest biblioteką do zarządzania niskopoziomowymi pętlami.
 
-Ten pakiet zawiera plik nagłówkowy potrzebny do kompilowania
+Ten pakiet zawiera pliki programistyczne potrzebne do kompilowania
 programów używających biblioteki wiążącej liboop z GLib 2.x.
 
 %package binding-glib2-static
@@ -413,6 +425,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_libdir}/liboop-adns.a
 
+%files binding-glib-common-devel
+%defattr(644,root,root,755)
+%{_includedir}/oop-glib.h
+
 %files binding-glib
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/liboop-glib.so.*.*.*
@@ -422,7 +438,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/liboop-glib.so
 %{_libdir}/liboop-glib.la
-%{_includedir}/oop-glib.h
 
 %files binding-glib-static
 %defattr(644,root,root,755)
@@ -437,7 +452,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/liboop-glib2.so
 %{_libdir}/liboop-glib2.la
-%{_includedir}/oop-glib.h
 %{_pkgconfigdir}/liboop-glib2.pc
 
 %files binding-glib2-static
