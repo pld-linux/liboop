@@ -6,7 +6,7 @@ Summary:	Libraries for low-level event loop management
 Summary(pl.UTF-8):	Biblioteki do zarządzania niskopoziomowymi pętlami
 Name:		liboop
 Version:	1.0
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://download.ofb.net/liboop/%{name}-%{version}.tar.bz2
@@ -324,7 +324,6 @@ Biblioteka wiążąca liboop z biblioteką w3c-libwww.
 Summary:	Header file for liboop w3c-libwww binding libraries
 Summary(pl.UTF-8):	Plik nagłówkowy biblioteki wiążącej liboop z w3c-libwww
 Group:		Development/Libraries
-Requires:	%{name}-bindings = %{version}-%{release}
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	w3c-libwww-devel
 
