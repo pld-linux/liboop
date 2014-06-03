@@ -6,7 +6,7 @@ Summary:	Libraries for low-level event loop management
 Summary(pl.UTF-8):	Biblioteki do zarządzania niskopoziomowymi pętlami
 Name:		liboop
 Version:	1.0
-Release:	3
+Release:	4
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://download.ofb.net/liboop/%{name}-%{version}.tar.bz2
