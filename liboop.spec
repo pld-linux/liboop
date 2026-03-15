@@ -20,14 +20,14 @@ BuildRequires:	adns-devel
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.7
 BuildRequires:	glib-devel
-BuildRequires:	glib2-devel
+BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libtool >= 1.4
 BuildRequires:	ncurses-devel
 BuildRequires:	pkgconfig
 BuildRequires:	readline-devel
 BuildRequires:	tcl-devel >= 8.3.4-10
 %{?with_libwww:BuildRequires:	w3c-libwww-devel}
-Obsoletes:	liboop-bindings
+Obsoletes:	liboop-bindings < 1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -55,7 +55,7 @@ Summary:	Header files for liboop
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki liboop
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Obsoletes:	liboop-bindings-devel
+Obsoletes:	liboop-bindings-devel < 1
 
 %description devel
 liboop is a low-level event loop management library.
@@ -199,7 +199,7 @@ Summary(pl.UTF-8):	Pliki programistyczne biblioteki wiążącej liboop z bibliot
 Group:		Development/Libraries
 Requires:	%{name}-binding-glib2 = %{version}-%{release}
 Requires:	%{name}-binding-glib-common-devel = %{version}-%{release}
-Requires:	glib2-devel
+Requires:	glib2-devel >= 2.0
 
 %description binding-glib2-devel
 liboop is a low-level event loop management library.
@@ -287,7 +287,7 @@ Summary(pl.UTF-8):	Plik nagłówkowy biblioteki wiążącej liboop z tcl
 Group:		Development/Libraries
 Requires:	%{name}-binding-tcl = %{version}-%{release}
 Requires:	%{name}-devel = %{version}-%{release}
-Requires:	tcl-devel
+Requires:	tcl-devel >= 8.3.4-10
 
 %description binding-tcl-devel
 This package contains the header file needed to write or compile
@@ -368,6 +368,7 @@ Statyczna biblioteka wiążąca liboop z w3c-libwww.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
