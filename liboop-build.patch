@@ -1,6 +1,5 @@
-diff -urN liboop-1.0.orig/Makefile.am liboop-1.0/Makefile.am
---- liboop-1.0.orig/Makefile.am	2019-03-14 22:45:00.950765054 +0100
-+++ liboop-1.0/Makefile.am	2019-03-14 22:45:33.050584843 +0100
+--- liboop-1.0.1.orig/Makefile.am	2019-03-14 22:45:00.950765054 +0100
++++ liboop-1.0.1/Makefile.am	2019-03-14 22:45:33.050584843 +0100
 @@ -7,7 +7,7 @@
  # See the file COPYING for details.
  
@@ -10,11 +9,11 @@ diff -urN liboop-1.0.orig/Makefile.am liboop-1.0/Makefile.am
  EXTRA_LTLIBRARIES = liboop-adns.la liboop-glib2.la liboop-glib.la liboop-tcl.la liboop-www.la liboop-rl.la
  
  pkgconfigdir = $(libdir)/pkgconfig
-@@ -52,6 +52,7 @@
+@@ -52,6 +52,7 @@ noinst_PROGRAMS = test-oop
  test_oop_SOURCES = test-oop.c
  test_oop_CFLAGS = $(GLIB2_CFLAGS) $(GLIB_INCLUDES) $(TCL_INCLUDES) $(WWW_INCLUDES)
- test_oop_LDADD = $(lib_LTLIBRARIES)
-+test_oop_DEPENDENCIES = $(lib_LTLIBRARIES)
+ test_oop_LDADD = $(lib_LTLIBRARIES) $(GLIB2_LIBS) $(ADNS_LIBS) $(TCL_LIBS) $(READLINE_LIBS)
++EXTRA_test_oop_DEPENDENCIES = $(lib_LTLIBRARIES)
  
  release: dist
  	gzip -dc $(PACKAGE)-$(VERSION).tar.gz | bzip2 -9 \
