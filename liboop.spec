@@ -398,12 +398,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/liboop.so.4
+%{_libdir}/liboop.so.*.*.*
+%ghost %{_libdir}/liboop.so.4
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop.so
+%{_libdir}/liboop.so
 %{_libdir}/liboop.la
 %{_includedir}/oop.h
 %{_includedir}/oop-read.h
@@ -415,11 +415,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files binding-adns
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-adns.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/liboop-adns.so.3
+%{_libdir}/liboop-adns.so.*.*.*
+%ghost %{_libdir}/liboop-adns.so.3
 
 %files binding-adns-devel
-%attr(755,root,root) %{_libdir}/liboop-adns.so
+%{_libdir}/liboop-adns.so
 %{_libdir}/liboop-adns.la
 %{_includedir}/oop-adns.h
 
@@ -433,12 +433,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files binding-glib
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-glib.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/liboop-glib.so.0
+%{_libdir}/liboop-glib.so.*.*.*
+%ghost %{_libdir}/liboop-glib.so.0
 
 %files binding-glib-devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-glib.so
+%{_libdir}/liboop-glib.so
 %{_libdir}/liboop-glib.la
 
 %files binding-glib-static
@@ -447,12 +447,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files binding-glib2
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-glib2.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/liboop-glib2.so.0
+%{_libdir}/liboop-glib2.so.*.*.*
+%ghost %{_libdir}/liboop-glib2.so.0
 
 %files binding-glib2-devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-glib2.so
+%{_libdir}/liboop-glib2.so
 %{_libdir}/liboop-glib2.la
 %{_pkgconfigdir}/liboop-glib2.pc
 
@@ -462,12 +462,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files binding-readline
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-rl.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/liboop-rl.so.0
+%{_libdir}/liboop-rl.so.*.*.*
+%ghost %{_libdir}/liboop-rl.so.0
 
 %files binding-readline-devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-rl.so
+%{_libdir}/liboop-rl.so
 %{_libdir}/liboop-rl.la
 %{_includedir}/oop-rl.h
 
@@ -477,12 +477,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files binding-tcl
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-tcl.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/liboop-tcl.so.0
+%{_libdir}/liboop-tcl.so.*.*.*
+%ghost %{_libdir}/liboop-tcl.so.0
 
 %files binding-tcl-devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-tcl.so
+%{_libdir}/liboop-tcl.so
 %{_libdir}/liboop-tcl.la
 %{_includedir}/oop-tcl.h
 
@@ -493,12 +493,12 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with libwww}
 %files binding-www
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-www.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/liboop-www.so.0
+%{_libdir}/liboop-www.so.*.*.*
+%ghost %{_libdir}/liboop-www.so.0
 
 %files binding-www-devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liboop-www.so
+%{_libdir}/liboop-www.so
 %{_libdir}/liboop-www.la
 %{_includedir}/oop-www.h
 
