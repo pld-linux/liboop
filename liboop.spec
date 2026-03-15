@@ -5,17 +5,17 @@
 Summary:	Libraries for low-level event loop management
 Summary(pl.UTF-8):	Biblioteki do zarządzania niskopoziomowymi pętlami
 Name:		liboop
-Version:	1.0
-Release:	8
+Version:	1.0.1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://download.ofb.net/liboop/%{name}-%{version}.tar.bz2
-# Source0-md5:	88fc8decf99fd75d2af40e0a005fa0d3
+Source0:	https://ftp.lysator.liu.se/pub/liboop/%{name}-%{version}.tar.gz
+# Source0-md5:	f2b3dff17355fd9a6e2229caca8993f0
 Patch0:		%{name}-libwww-fix.patch
 Patch1:		%{name}-link.patch
 Patch2:		%{name}-tcl.patch
 Patch3:		%{name}-build.patch
-URL:		http://liboop.ofb.net/
+URL:		https://www.lysator.liu.se/liboop/
 BuildRequires:	adns-devel
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.7
